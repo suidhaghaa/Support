@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website with Live Chat</title>
+  <style>
+    /* Basic Page Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar & Logo Styling */
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .site-logo {
+      height: 45px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1a202c;
+    }
+
+    /* Main Content Area */
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+
+    p {
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Website Logo -->
+  <header>
+    <a href="#" class="logo-container">
+      <!-- Replace 'logo.png' with your actual logo path or image URL -->
+      <img src="logo.png" alt="Company Logo" class="site-logo" />
+      <span class="site-title">My Brand</span>
+    </a>
+  </header>
+
+  <!-- Main Website Content -->
+  <main>
+    <h1>Welcome to Our Website</h1>
+    <p>This page features an embedded live chat widget powered by tawk.to. Look at the bottom-right corner to start a conversation with our support team!</p>
+  </main>
+
+  <!-- Start of tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function(){
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      /* REPLACE THE URL BELOW WITH YOUR DIRECT TAWK.TO WIDGET URL */
+      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!-- End of tawk.to Script -->
+
+</body>
+</html>
